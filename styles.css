@@ -1,0 +1,176 @@
+*{
+	font-family: 'Courier New', Courier, monospace;
+}
+.text-center{
+	text-align: center;
+}
+.header{
+	padding: 2%;
+	text-align: center;
+	background-color: #f4f4f4;
+}
+.contenido{
+	position: relative;
+	display: block;
+}
+.contenido .contenedor{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 5px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	overflow-y: hidden;
+	height: auto;
+	
+}
+.contenido .contenedor .table .encabezado{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	padding: 15px;
+
+	margin: 0 auto;
+}
+.contenido .contenedor .table .encabezado .col{
+	width: 13.5%;
+	display: grid;
+	float: left;
+	/* text-align: center; */
+	position: relative;
+	padding: 10px;
+
+}
+.contenido .contenedor .table .cuerpo {
+	width: 100%;
+	position: relative;
+	height: auto;
+	overflow: hidden;
+}
+.contenido .contenedor .table .cuerpo {
+	position: relative;
+	display: block;
+}
+.contenido .contenedor .table .cuerpo .result{
+	width: 19.5%;
+	margin: auto 5px;
+	float: left;
+	padding: 15px;
+	text-align: center;
+	position: relative;
+}
+.contenido .contenedor .table .cuerpo .col{
+	border: 2px solid lightgray;
+	border-radius: 10px;
+	width: 8.5%;
+	margin-bottom: 10px;
+}
+.footer{
+	padding: 1px;
+	background-color: #ddd;
+	
+}
+
+
+
+@media screen and (max-width: 613px){
+	
+	.contenido .contenedor .table .cuerpo .col{
+		width: 8.5%;
+		display: grid;
+		float: left;
+		/* text-align: center; */
+		position: relative;
+		padding: 2px;
+
+	}
+
+	.contenido .contenedor .table .encabezado .col{
+		width: 7%;
+	}
+}
+
+@media screen and (min-width: 614px){
+	
+	.contenido .contenedor .table .cuerpo .col{
+		width: 8.5%;
+		display: grid;
+		float: left;
+		/* text-align: center; */
+		position: relative;
+		padding: 10px;
+
+	}
+
+	.contenido .contenedor .table .encabezado .col{
+		width: 10%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.deskstop button {
+	background-color: #809395; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	cursor:pointer;
+	border-radius: 5px;
+}
+
+	
+
+
+.mobile{
+	display: block;
+}
+.mobile i.right,
+.mobile i.left{
+	position: absolute;
+	height: 10px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: -1%;
+	z-index: 9;
+	color:gray;
+	padding: 10px 16px;
+	
+	cursor:pointer;
+	}
+	.mobile i.right{
+	
+	right: 0px;
+	left: auto;
+	}
+
+
+	@media screen and (min-width: 960px) {
+	.deskstop{
+	display: block;
+	}
+	.mobile{
+	display: none;
+	}
+	}
+	@media screen and (max-width: 959px) {
+	.deskstop{
+	display: none;
+	}
+	.mobile{
+	display: block;
+	}
+	}
